@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wage Mate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Wage Mate</h1>
+    </header>
+    <main>
+        <div class="month-selection">
+            <label for="month">Select Month:</label>
+            <select id="month">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+        </div>
+        <div class="inputs">
+            <div class="shifts-section">
+                <label for="shifts">Shifts</label>
+                <div id="shifts">
+                    <!-- 31 input boxes for daily shifts with day labels -->
+                </div>
+                <label for="wage">Wage/Shift</label>
+                <input type="text" id="wage">
+                <select id="currency">
+                    <option value="USD">$ USD</option>
+                    <option value="EUR">€ EUR</option>
+                    <option value="JPY">¥ JPY</option>
+                    <option value="GBP">£ GBP</option>
+                    <option value="AUD">$ AUD</option>
+                    <option value="CAD">$ CAD</option>
+                    <option value="CHF">Fr CHF</option>
+                    <option value="CNY">¥ CNY</option>
+                    <option value="SEK">kr SEK</option>
+                    <option value="NZD">$ NZD</option>
+                    <option value="INR">₹ INR</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="results">
+            <label for="total-shifts">Total Shifts:</label>
+            <input type="text" id="total-shifts" readonly>
+            <label for="total-wage">Wage/Shift:</label>
+            <input type="text" id="total-wage" readonly>
+            <button id="get-btn">Get</button>
+            <br>
+            <button id="total-amount-btn">Total Amount</button>
+            <input type="text" id="total-amount" readonly>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
