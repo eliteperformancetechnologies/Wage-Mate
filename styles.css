@@ -1,0 +1,66 @@
+body {
+    background-color: beige;
+    color: darkbrown;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.month-selection {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.shifts-section {
+    width: 100%;
+    text-align: center;
+}
+
+#shifts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+#shifts div {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: darkbrown;
+    color: beige;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6d4c41;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.label-day {
+    margin: 5px 0;
+}
